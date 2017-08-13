@@ -1,26 +1,31 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import {
   StyleSheet,
   Text,
   TouchableOpacity,
 } from 'react-native'
 
-export default class BoardName extends PureComponent {
+const styles = StyleSheet.create({
+  boardName: {
+    backgroundColor: '#7986CB',
+    borderWidth: 1,
+    borderColor: '#E8EAF6',
+    paddingVertical: 20,
+    paddingHorizontal: 10,
+  }
+})
+
+class BoardName extends Component {
   render() {
     return(
-      <TouchableOpacity style={styles.boardName}>
+      <TouchableOpacity
+        style={styles.boardName}
+        onPress={() => props.navigation.dispatch({ type: 'BoardMessages' })}
+      >
         <Text>{this.props.name}</Text>
       </TouchableOpacity>
     )
   }
 }
 
-const styles = StyleSheet.create({
-  boardName: {
-    backgroundColor: '#e5e5e5',
-    borderWidth: 1,
-    borderColor: '#eee',
-    paddingVertical: 20,
-    paddingHorizontal: 10,
-  }
-})
+export default BoardName
