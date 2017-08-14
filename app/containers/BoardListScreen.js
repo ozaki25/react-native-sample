@@ -21,11 +21,12 @@ class BoardListScreen extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
       <FlatList
         style={styles.container}
         data={data}
-        renderItem={({item}) => <BoardName {...item} />}
+        renderItem={({item}) => <BoardName {...item} {...this.props} />}
       />
     )
   }

@@ -4,6 +4,7 @@ import {
   Text,
   TouchableOpacity,
 } from 'react-native'
+import { NavigationActions } from 'react-navigation'
 
 const styles = StyleSheet.create({
   boardName: {
@@ -17,10 +18,12 @@ const styles = StyleSheet.create({
 
 class BoardName extends Component {
   render() {
+    console.log(this.props)
+    const navigation = this.props.navigation
     return(
       <TouchableOpacity
         style={styles.boardName}
-        onPress={() => props.navigation.dispatch({ type: 'BoardMessages' })}
+        onPress={() => navigation.dispatch(NavigationActions.navigate({ routeName: 'BoardMessages' }))}
       >
         <Text>{this.props.name}</Text>
       </TouchableOpacity>

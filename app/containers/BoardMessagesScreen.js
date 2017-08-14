@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, FlatList } from 'react-native'
+import { StyleSheet, FlatList, Text } from 'react-native'
 
 const data = [
   { key:'1', msg: 'hello' },
