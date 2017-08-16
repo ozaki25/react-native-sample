@@ -21,7 +21,6 @@ class BoardListScreen extends Component {
   }
 
   render() {
-    console.log(this.props)
     return (
       <FlatList
         style={styles.container}
