@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
-import { StyleSheet } from 'react-native'
-import { FormLabel, FormInput } from 'react-native-elements'
+import { StyleSheet, View } from 'react-native'
+import { Button, FormLabel, FormInput } from 'react-native-elements'
+
+const styles = StyleSheet.create({
+  submit: {
+    backgroundColor: '#00B0FF',
+  },
+})
 
 class FormScreen extends Component {
   static navigationOptions = {
@@ -15,8 +21,8 @@ class FormScreen extends Component {
         <FormLabel>本文</FormLabel>
         <FormInput 
           multiline={true}
-          numberOfLines={4}
         />
+        <Button title="送信" buttonStyle={styles.submit} />
       </View>
     )
   }
