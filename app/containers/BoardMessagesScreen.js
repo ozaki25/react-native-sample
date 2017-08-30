@@ -17,6 +17,7 @@ const styles = StyleSheet.create({
 class BoardMessagesScreen extends Component {
   static navigationOptions = {
     title: 'BoardMessages',
+    headerStyle: { backgroundColor: '#d70000' }
   }
 
   render() {

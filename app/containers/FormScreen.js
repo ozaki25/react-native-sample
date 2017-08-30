@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
 class FormScreen extends Component {
   static navigationOptions = {
     title: 'Form',
+    headerStyle: { backgroundColor: '#d70000' }
   }
 
   render() {

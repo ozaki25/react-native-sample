@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
 class BoardListScreen extends Component {
   static navigationOptions = {
     title: 'BoardList',
+    headerStyle: { backgroundColor: '#d70000' }
   }
 
   render() {

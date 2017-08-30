@@ -8,7 +8,7 @@ import { NavigationActions } from 'react-navigation'
 
 const styles = StyleSheet.create({
   boardName: {
-    backgroundColor: '#7986CB',
+    backgroundColor: '#f5f5f5',
     borderWidth: 1,
     borderColor: '#E8EAF6',
     paddingVertical: 20,
